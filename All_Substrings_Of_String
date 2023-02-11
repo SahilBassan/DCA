@@ -1,0 +1,34 @@
+
+Method 1 
+import java.util.*;
+
+class GFG {
+	public static void main (String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String str = sc.nextLine();
+		for(int i=0; i<str.length(); i++){
+		    String s = "";
+		    for(int j=i; j<str.length(); j++){
+		        s += str.charAt(j);
+		        System.out.println(s);
+		    }
+		}
+	}
+}
+
+
+INPUT :
+abcd
+
+OUTPUT :
+a
+ab
+abc
+abcd
+b
+bc
+bcd
+c
+cd
+d
+----------------------------------------------------------------
